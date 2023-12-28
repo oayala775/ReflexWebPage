@@ -20,7 +20,7 @@ def navbar() -> rx.Component:
             ),
             rx.spacer(),
             button_links("Home",""),
-            button_links("Portfolio","None"),
+            button_links("Portfolio","portfolio"),
             button_links("Contact Me","contact_me"),
             width="100%",
         ),

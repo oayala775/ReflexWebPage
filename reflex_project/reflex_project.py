@@ -25,6 +25,12 @@ def contact_me() -> rx.Component:
     return rx.vstack(
         navbar(),
     )
+    
+@rx.page(route="/portfolio")
+def portfolio() -> rx.Component:
+    return rx.vstack(
+        navbar(),
+    )
 
 
 app = rx.App(stylesheets=FONTS)
