@@ -11,6 +11,6 @@ def header() -> rx.Component:
             rx.text("Omar Ayala")
         ),
         rx.spacer(),
-        rx.text("""I'm an undergraduate of Computer Science Bachelor at University of Guadalajara, considering myself a passionate student, family person and a science advocate. Passionate about soccer, self developing, cooking and photography."""),
-        margin_y = styles.Spacer.MEDIUM_MARGIN
+        rx.text("""I'm an undergraduate of Computer Science Bachelor at University of Guadalajara, considering myself a passionate student, family person and a science advocate. Passionate about soccer, self development, cooking and photography."""),
+        margin_top = "5em"
         )
