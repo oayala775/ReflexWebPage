@@ -1,4 +1,6 @@
-MAX_WIDTH = "800px"
+import reflex as rx
+
+MAX_WIDTH = "50em"
 PAGE_BACKGROUND_COLOR = "#003366"
 FONTS = {
     "Press Start":"https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap",
@@ -10,4 +12,3 @@ class Spacer():
     MIN_MARGIN = "0.5"
     MEDIUM_MARGIN = "1em"
     MAX_MARGIN = "2em"
-    

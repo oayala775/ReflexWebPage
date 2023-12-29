@@ -15,13 +15,14 @@ def navbar() -> rx.Component:
                 color="#FFFFFF",
             ),
             rx.spacer(),
-            button_links("Home",""),
+            button_links("Home","/"),
             button_links("Portfolio","portfolio"),
-            button_links("Contact Me","contact_me"),
+            button_links("Contact Me","contact_me",margin_right=styles.Spacer.MEDIUM_MARGIN),
             width="100%",
         ),
         position="fixed",
         bg=styles.PAGE_BACKGROUND_COLOR,
         z_index="999",
-        width="100%"
+        width="100%",
+        top="0"
     )
