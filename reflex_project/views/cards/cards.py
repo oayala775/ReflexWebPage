@@ -24,13 +24,8 @@ def cards() -> rx.Component:
             card("python.ico","CSS","Experience: 6 years"),
             card("python.ico","Embedded Programming","Experience: 6 years"),
         ),
-        rx.mobile_and_tablet(
-            padding_x = styles.Spacer.MAX_MARGIN,
-            padding_bottom = styles.Spacer.MEDIUM_MARGIN,
-            padding_top = styles.Spacer.MEDIUM_MARGIN,
-            width="100%",
-        ),
         padding_bottom = styles.Spacer.MEDIUM_MARGIN,
         padding_top = styles.Spacer.MEDIUM_MARGIN,
         width="100%",
+        bg=styles.PAGE_BACKGROUND_COLOR
     )

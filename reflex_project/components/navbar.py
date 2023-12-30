@@ -20,7 +20,7 @@ def navbar() -> rx.Component:
             button_links("Contact Me","contact_me",margin_right=styles.Spacer.MEDIUM_MARGIN),
             width="100%",
         ),
-        position="fixed",
+        position="sticky",
         bg=styles.PAGE_BACKGROUND_COLOR,
         z_index="999",
         width="100%",

@@ -15,6 +15,5 @@ def footer() -> rx.Component:
             padding_y = styles.Spacer.MAX_MARGIN,
         ),
         bg=styles.PAGE_BACKGROUND_COLOR,
-        z_index="999",
         width="100%",
     )
