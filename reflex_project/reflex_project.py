@@ -28,7 +28,6 @@ def index() -> rx.Component:
                 cards(),
                 video_academic(),
                 max_width=styles.MAX_WIDTH,
-                # min_width="300px",
                 color = "white",
             ),
         ),

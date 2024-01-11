@@ -1,6 +1,7 @@
 import reflex as rx
 
 MAX_WIDTH = "50em"
+DEFAULT_WIDTH = "25em"
 PAGE_BACKGROUND_COLOR = "#003366"
 FONTS = {
     "Press Start":"https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap",

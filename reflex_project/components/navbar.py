@@ -15,10 +15,38 @@ def navbar() -> rx.Component:
                 color="#FFFFFF",
             ),
             rx.spacer(),
-            button_links("Home","/"),
-            button_links("Portfolio","portfolio"),
-            button_links("Contact Me","contact_me",margin_right=styles.Spacer.MEDIUM_MARGIN),
-            width="100%",
+            rx.tablet_and_desktop(
+                rx.hstack(
+                    button_links("Home","/"),
+                    button_links("Portfolio","portfolio"),
+                    button_links("Contact Me","contact_me",margin_right=styles.Spacer.MEDIUM_MARGIN),
+                    width="100%",   
+                    margin=styles.Spacer.MEDIUM_MARGIN
+                )
+            ),
+            rx.mobile_only(
+                rx.menu(
+                    rx.menu_button(
+                        rx.center(
+                            rx.icon(tag="hamburger",color="white")
+                        )
+                    ),
+                    rx.menu_list(
+                        rx.menu_item(
+                            rx.link("Home",href="/"),
+                        ),
+                        rx.menu_item(
+                            rx.link("Portfolio",href="/portfolio")
+                        ),
+                        rx.menu_item(
+                            rx.link("Contact",href="/contact_me")
+                        ),
+                    )
+                ),
+                padding_y=styles.Spacer.MAX_MARGIN,
+                padding_x=styles.Spacer.MAX_MARGIN
+            ),
+            width="100%"
         ),
         position="sticky",
         bg=styles.PAGE_BACKGROUND_COLOR,

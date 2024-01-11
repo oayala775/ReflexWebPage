@@ -7,7 +7,7 @@ def video_academic() -> rx.Component:
             rx.heading("Academic Formation"),
             margin_y=styles.Spacer.MEDIUM_MARGIN
         ),
-        rx.hstack(
+        rx.responsive_grid(
             rx.card(
                 rx.video(
                     url="https://www.youtube.com/watch?v=PQChtGb3L8M",
@@ -16,7 +16,7 @@ def video_academic() -> rx.Component:
                 header=rx.center(
                     rx.heading("CETI Colomos",size="md"),
                 ),
-                width="30em"
+                width="auto",
             ),
             rx.card(
                 rx.video(
@@ -26,8 +26,10 @@ def video_academic() -> rx.Component:
                 header=rx.center(
                     rx.heading("CUCEI",size="md"),
                 ),
-                width="30em"
-            )
+                width="auto",
+            ),
+            columns=[1,2],
+            gap=4
         ),
         width="100%"
     )
