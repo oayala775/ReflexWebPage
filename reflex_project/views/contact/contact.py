@@ -34,16 +34,25 @@ def contact() -> rx.Component:
                 rx.box(
                     rx.hstack(
                         rx.link(
-                            rx.image(src="/github.png", width="50px"),
+                            rx.image(
+                                src="/github.png", width="50px", alt="GitHub link"
+                            ),
                             href="https://github.com/oayala775",
+                            is_external=True,
                         ),
                         rx.link(
-                            rx.image(src="/linkedin.png", width="50px"),
+                            rx.image(
+                                src="/linkedin.png", width="50px", alt="LinkedIn link"
+                            ),
                             href="https://www.linkedin.com/in/omar-ayala-9a6058206/",
+                            is_external=True,
                         ),
                         rx.link(
-                            rx.image(src="/twitter.png", width="50px"),
+                            rx.image(
+                                src="/twitter.png", width="50px", alt="Twitter link"
+                            ),
                             href="https://github.com/oayala775",
+                            is_external=True,
                         ),
                     ),
                 ),
